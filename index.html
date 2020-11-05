@@ -194,42 +194,17 @@
                 </div>
                 <h2><u>Introduction, Installing/Running Python for FIRST TIMERS</u></h2>
                 <div class="g">
-                    <script>
-                        var i = 0;
-                        var j = 0;
-                        var txt = 'Lets Install Python! \
-                        If you already have a python environment set up, go ahead and skip to Lesson 1.'
-                        var txt2 = 'If Yes, skip to lesson 1.\
-                        If you are not sure, review this lesson and then we can get started.'
-
-                        var speed = 30;
-
-                        function typeWriter() {
-                          if (i < txt.length) {
-                            document.getElementById("demo").innerHTML += txt.charAt(i);
-                            i++;
-                            setTimeout(typeWriter, speed);
-                          }
-                        }
-                        function typeWriter2(){
-                          if (j < txt2.length) {
-                            document.getElementById("ns").innerHTML += txt2.charAt(j);
-                            j++;
-                            setTimeout(typeWriter2, speed);
-                          }
-
-                        }
-                      </script>
-                      <p>Start Lesson</p>
-                    </div>
-                    <div class="dropdown">
-                      <button class="dropbtn">Download File</button>
-                      <div class="dropdown-content">
-                        <a href="#">Intro</a>
-                      </div>
-                    </div>
+                    <script src="Javascript/getstarted.js"></script>
+                    <p>Start Lesson</p>
+                </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Download File</button>
+                  <div class="dropdown-content">
+                    <a href="#">Intro</a>
                   </div>
-                  <br><br><br>
+                </div>
+              </div>
+              <br><br><br>
 
               <div id ="L1">
                 <h2><u>Lesson 1: Basic Calculations | Varaibles </u></h2>
@@ -251,6 +226,7 @@
                       </script>
                     <p>Start Lesson</p>
                   </div>
+
                   <div class="dropdown">
                     <button class="dropbtn">Practice: Lesson 1</button>
                     <div class="dropdown-content">
