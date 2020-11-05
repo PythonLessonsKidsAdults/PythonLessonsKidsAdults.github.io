@@ -14,6 +14,10 @@
       <a href="#Lessons">Lessons</a>
       <a href="#Contact">Contact</a>
     </div>
+
+    <!--Script for navbar -->
+    <script src="Javascript/navbar.js"></script>
+    <!-- End Script for Navbar -->
     <!-- End Navbar -->
 
 
@@ -51,10 +55,10 @@
             <img src="pythonEZ.png" alt="">
             <br><br><br>
           </nav>
+
           <article>
             <h1 align=center><u>Goals</u></h1>
             <div id ="Goals" class="g">
-
               <p><h3>Why PYTHON Programming?</h3></p>
               <p>Programming will help you foster creativity, problem solving, and reasoning. Programming will allow you to create something fun.</p>
               <p> You will be able to turn nothng into something.</p>
@@ -115,7 +119,7 @@
               <p></p>
               <p></p>
             </div>
-              <h1 align=center><u>About Author</u></h1>
+            <h1 align=center><u>About Author</u></h1>
             <div id ="Author" class="g">
               <h2>Who am I?</h2>
               <p>I am a college student attending University of Colorado at Boulder. I am enrolled in the College of Engineering and Applied Science. </p>
@@ -191,10 +195,10 @@
                   <button class="b2"onclick="typeWriter2()">Do you have a python environment?</button>
                   <p id="demo"></p>
                   <p id= "ns"></p>
+                  <script src="Javascript/getstarted.js"></script>
                 </div>
                 <h2><u>Introduction, Installing/Running Python for FIRST TIMERS</u></h2>
                 <div class="g">
-                    <script src="Javascript/getstarted.js"></script>
                     <p>Start Lesson</p>
                 </div>
                 <div class="dropdown">
@@ -209,51 +213,46 @@
               <div id ="L1">
                 <h2><u>Lesson 1: Basic Calculations | Varaibles </u></h2>
                 <div class="g">
-                    <button class="b3" onclick="typeWriter3()">Lesson 1</button>
-                    <p id="l1bcv"></p>
-                    <script>
-                        var lesson1 = 0;
-                        var txt_lesson1 = 'Intentions: Learn basic calculations \
-                        and basic variable assignments'
-                        var lesson1_speed = 30;
-                        function typeWriter3() {
-                          if (lesson1 < txt_lesson1.length) {
-                            document.getElementById("l1bcv").innerHTML += txt_lesson1.charAt(lesson1);
-                            lesson1++;
-                            setTimeout(typeWriter3, lesson1_speed);
-                          }
-                        }
-                      </script>
-                    <p>Start Lesson</p>
-                  </div>
+                  <button class="b3" onclick="typeWriter3()">Lesson 1</button>
+                  <p id="l1bcv"></p>
+                  <script src="Javascript/Lesson1.js"></script>
+                  <p>Start Lesson</p>
+                </div>
 
-                  <div class="dropdown">
-                    <button class="dropbtn">Practice: Lesson 1</button>
-                    <div class="dropdown-content">
-                      <a href="Lesson1.py"  target="_blank">Lesson1.py</a>
-                    </div>
-                  </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Answers: Lesson 1</button>
-                    <div class="dropdown-content">
-                      <a href="Lesson1.py"  target="_blank">Lesson1.py</a>
-                    </div>
+                <div class="dropdown">
+                  <button class="dropbtn">Practice: Lesson 1</button>
+                  <div class="dropdown-content">
+                    <a href="Lesson1.py"  target="_blank">Lesson1.py</a>
                   </div>
                 </div>
-                <br><br><br>
+
+                <div class="dropdown">
+                  <button class="dropbtn">Answers: Lesson 1</button>
+                  <div class="dropdown-content">
+                    <a href="Lesson1.py"  target="_blank">Lesson1.py</a>
+                  </div>
+                </div>
+
+              </div>
+
+              <br><br><br>
 
               <div id ="L2">
                 <h2><u>Lesson 2:Python Types </u></h2>
-                  <div class="g">
-                    <p>Start Lesson</p>
+
+                <div class="g">
+                  <p>Start Lesson</p>
+                </div>
+
+                <div class="dropdown">
+                  <button class="dropbtn">Download File</button>
+                  <div class="dropdown-content">
+                    <a href="#">Intro</a>
                   </div>
-                  <div class="dropdown">
-                    <button class="dropbtn">Download File</button>
-                    <div class="dropdown-content">
-                      <a href="#">Intro</a>
-                    </div>
-                  </div>
+                </div>
+
               </div>
+
               <br><br><br>
 
               <div id ="L3">
@@ -261,6 +260,7 @@
                 <div class="g">
                   <p>Start Lesson</p>
                 </div>
+
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -268,6 +268,7 @@
                   </div>
                 </div>
               </div>
+
               <br><br><br>
 
               <div id ="L4">
@@ -275,6 +276,7 @@
                 <div class="g">
                   <p>Start Lesson</p>
                 </div>
+
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -289,6 +291,7 @@
                 <div class="g">
                   <p>Start Lesson</p>
                 </div>
+
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
@@ -296,6 +299,7 @@
                   </div>
                 </div>
               </div>
+              
               <br><br><br>
 
               <div id ="L6">
@@ -518,20 +522,6 @@
 
 
 
-    <!--Script for navbar -->
-    <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-50px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-    </script>
-    <!-- End Script for Navbar -->
     <footer>
       <p>Made with lots of love.</p>
       <p>I have high hopes that this will help you become a Beginner Programmer in PYTHON!</p>
