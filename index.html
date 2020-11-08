@@ -11,10 +11,28 @@
     <!-- Begin NavBar -->
     <div id="navbar">
       <a href="#home">Welcome</a>
-      <a href="#Lessons">Lessons</a>
+      <!-- <a href="#Lessons">Lessons</a> -->
+      <div class="dropdown">
+        <button class="dropbtn">Lessons</button>
+        <div class="dropdown-content">
+          <a href="#Lessons">All Lessons</a>
+          <a href="#Intro">Intro: Starting Python</a>
+          <a href="#L1">1: Basic Calculations • Varaible</a>
+          <a href="#L2">2: Python Types</a>
+          <a href="#L3">3:Turtle Module</a>
+          <a href="#L4">4: If/Else statemetns</a>
+          <a href="#L5">5: While/For Loops</a>
+          <a href="#L6">6: Create Functions</a>
+          <a href="#L7">7: Classes and Objects</a>
+          <a href="#L8">8: Built-in Functions</a>
+          <a href="#L9">9: Turtle Module (Intermediate)</a>
+          <a href="#L10">10: Tkinder Module (Intermediate)</a>
+          <a href="#L11">11: Create Game</a>
+          <a href="#L12">12: Game cont.</a>
+        </div>
+      </div>
       <a href="#Contact">Contact</a>
     </div>
-
     <!--Script for navbar -->
     <script src="Javascript/navbar.js"></script>
     <!-- End Script for Navbar -->
@@ -278,7 +296,7 @@ Hello World </code></pre>
               <br><br><br>
 
               <div id ="L1">
-                <h2><u>Lesson 1: Basic Calculations | Varaibles </u></h2>
+                <h2><u>Lesson 1: Basic Calculations | Variables </u></h2>
                 <div class="g">
                   <button class="b3" onclick="typeWriter3()">Lesson 1</button>
                   <p id="l1bcv"></p>
@@ -295,6 +313,70 @@ Hello World </code></pre>
                   <p>Do you see a difference between what coded and what you would write? The difference is the 'x'. </p>
                   <p>In python, you will come to see that syntax is very important. That is why for multiplication we use the asterik (*) instead of the standard (x).</p>
                   <p>Solving a word Example:</p>
+                  <p>I will give you 10 dollars everytime you walk my dog, and at the end of the month I will add 5 dollars. Lets say you do this everyday for a year, how much money will you have earned?</p>
+                  <p>On paper the equations might look like: </p>
+                  <code>$10 x 365 = 3650 --> Walking my dog everyday</code>  <br>
+                  <code>$5 x 12 = 60 --> 5 dollars at the end of the every month </code> <br>
+                  <code> $3650 + $60 = $3710  --> Total money earned at the end of the year.</code>
+                  <p>Luckily for python, you can do this directly as well. However you would not hav eto do any of the math, the program will do it all for you. </p>
+                  <p>This is how it would look like if you wrote it in python:</p>
+                  <code>print(10 * 365) --> OUTPUT: 3650</code> <br>
+                  <code>print(5 x 12) --> OUTPUT: 60</code><br>
+                  <code>print(3650 + 60) --> OUTPUT: 3710</code>
+                  <p>This is a very simple math operation. We will get much more into depth further down.</p>
+                  <p>Python allows for the use of multiplication, division, addition, and subtraction. Though python is simple, it allows for much
+                  more advanced mathematical operations that we will not cover right now.</p>
+                  <h4>Python Operators</h4>
+                  <p>+ Addition</p>
+                  <p>- Subtraction</p>
+                  <p>* Multiplication</p>
+                  <p>/ Division, when writing on paper, the most common form of division is ÷, but for python we use the forward slash.</p>
+                  <h4>Order of Operations</h4>
+                  <p>Just like doing math on paper, there are operations and logic that needs to be followed. Using PEMDAS is the best way to follow your logic
+                  when doing operations in python.</p>
+                  <p>When doing math operations in python, the best way to follow logic is to use ().</p>
+                  <p>Multiplication and division have a higher order than addition and subtraction, which means that they’re performed first.
+                    With this being said, if you create an equation in Python, multiplication or division is performed  first, then addition or subtraction.</p>
+                  <p>Example with no ():</p>
+                  <p>Type the following in your text editor:</p>
+                  <code>5 + 30 * 20</code>
+                  <p>After running it, result will be 605</p>
+                  <p>Example with ()</p>
+                  <p>Using the same numbers as above. Type the following: </p>
+                  <code>(5 + 30) * 20</code>
+                  <p>Notice that the result is different. This time we get 700.</p>
+                  <p>That is because we are saying: Do the operation in the parentheses first,  then do the operations outside the parentheses. </p>
+                  <p style="color:red">Remember, multiplication and division always go before addition and subtraction. Unless () are used to control the order of operations</p>
+                  <button class="b3" onclick="needhelp()">Need Help?</button>
+                  <p id="nh_lesson1"></p>
+                  <script src="Javascript/Lesson1.js"></script>
+                  <hr>
+                  <h3>Variables</h3>
+                  <p>In programming, the term variable that is used to store information- numbers, text, lists of numbers and text, etc..</p>
+                  <p>Example:</p>
+                  <p>To create a variable named number, we will use the symbol =</p>
+                  <p>We then tell Python the information we want it to hold.</p>
+                  <p>In this case, we want our variable number to hold the number 25</p>
+                  <p>So we type the following in our code editor:</p>
+                  <code>number = 25</code>
+                  <p>To show what information this variable holds, we can also add a print statement.</p>
+                  <code>print(number)</code>
+                  <p>After running it, out put should be: 25</p>
+                  <p>In python we can also use more than one variable for the same item.</p>
+                  <p>For example:</p>
+                  <code>number = 25</code><br>
+                  <code>new_number = number</code><br>
+                  <code>print(new_number)</code><br>
+                  <code>OUTPUT: 25</code>
+                  <p>Here we see that we assign number, which holds the value 25, to our new variable, new_number. We can then print our new variable, and
+                  it will have the output of the old variable.</p>
+                  <h4>Lets do some math using Variables</h4>
+                  <p>Lets use the world example we did previously.</p>
+                  <p>Solving a word Example:</p>
+                  <p>I will give you 10 dollars everytime you walk my dog, and at the end of the month I will add 5 dollars. Lets say you do this everyday for a year, how much money will you have earned?</p>
+
+                  <p style="color:red">Try this on your own before checking for the answer!</p>
+                  <p>Here the goal is to assign our math values to variables and then doing the math operations to find the total amount of money made from walking my dog for a year.</p>
                 </div>
 
                 <div class="dropdown">

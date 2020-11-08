@@ -104,7 +104,6 @@ header {
 nav {
   float: left;
   width: 30%;
-  height: 300px; /* only for demonstration, should be removed */
   background: transparent;
   padding: 20px;
   color: white;

@@ -10,4 +10,17 @@ function typeWriter3() {
     setTimeout(typeWriter3, lesson1_speed);
   }
 }
+
+var need_help_lesson1 = 0;
+var nh_lesson1_text = 'If you are still confused, please re-read and \
+try with different numbers, math operations, and just mess around \
+with the logic of doing math operations.'
+var nh_lesson1_speed = 30;
+function needhelp(){
+  if(need_help_lesson1 < nh_lesson1_text.length){
+    document.getElementById("nh_lesson1").innerHTML += nh_lesson1_text.charAt(need_help_lesson1);
+    need_help_lesson1++;
+    setTimeout(needhelp, nh_lesson1_speed);
+  }
+}
 // Lesson 1 button end
