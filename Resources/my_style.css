@@ -11,7 +11,7 @@ body{
 }
 /* NavBar */
 #navbar {
-  background-color: black;
+  background-color: transparent;
   position: fixed;
   top: 0;
   width: 100%;
@@ -22,7 +22,7 @@ body{
 #navbar a {
   float: right;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -75,6 +75,13 @@ body{
   background-color: white;
   opacity: 0.9;
 
+}
+code{
+  /*flex: 100%;*/
+  /*padding: 15px;*/
+  background-color: yellow;
+  opacity: 0.9;
+  color: black;
 }
 * {
   box-sizing: border-box;

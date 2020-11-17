@@ -20,6 +20,7 @@ function SyntaxError(){
 
 }
 
+// begin syntaxt error hide/show
 function letterOutPut(){
   var x = document.getElementById('letter_lesson2');
   if(x.style.display === "none"){
@@ -27,7 +28,14 @@ function letterOutPut(){
   }else{
     x.style.display = "none";
   }
-
 }
 
-// begin syntaxt error hide/show
+// begin show answer exercise 1
+function exercise1_answer(){
+	var x = document.getElementById('AE_l2');
+	if(x.style.display === "none"){
+		x.style.display = " block"
+	}else{
+		x.style.display = "none";
+	}
+}

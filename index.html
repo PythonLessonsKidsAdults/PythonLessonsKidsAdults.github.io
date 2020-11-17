@@ -386,7 +386,7 @@ Hello World </code></pre>
 
               <br><br><br>
 
-
+              <!-- Lesson 2 -->
 
               <div id ="L2">
                 <h2><u>Lesson 2:Python Types </u></h2>
@@ -499,7 +499,59 @@ Hello World </code></pre>
                     This may take some getting use to, but for computers, that is how it makes sense. <br>
                     Here is a great explanation provided by <a href="https://blog.usejournal.com/arrays-start-at-zero-whats-up-with-that-f2d1054c9b77" target="_blank"> Jonathan Bluks</a>
                   </p>
-                  <p>Going back to our manipulation of lists, lets say we remembered we had something but need something else. We can change an item by doing the following.</p>
+                  <p>Going back to our manipulation of lists, lets say we remembered we had something but need something else. We can change an item by doing the following. <br>
+                    <code>#Lets say we remebered that we had Eggs but no Milk. <br>
+                      # We want to add that to our store list <br>
+                      store_list[0] = 'Milk' <br>
+                      print(store_list) <br>
+                      #OUTPUT: ['Milk', 'Ham', 'Cheese', 'Bread', 'Lettuce', 'Tomatoes']
+                    <br></code>
+                    we see that it has replaced Eggs with Milk in our first position (index position 0). Lists are a powerful type in python.
+                  </p>
+                  <p>Lists can store numbers, strings, numbers and strings, and even other lists as well.</p>
+                  <p>The power of Lists:<br>
+                    <code>number_list = [1, 2, 3, 4, 5, 6] <br>
+                      string_list = ['Python', 'C++', 'Javascript'] <br>
+                      numbers_strings_list = [1, 'one', 2, 'two', 3, 'three'] <br>
+                      new_list = [number_list, string_list] <br>
+                      <br>
+                      print(number_list, "--> number_list")<br>
+                      print(string_list, "--> string_list")<br>
+                      print(numbers_strings_list, "--> numbers_strings_list")<br>
+                      print(new_list, "--> new_list")<br>
+                      OUTPUT:<br>
+                      [1, 2, 3, 4, 5, 6] --> number_list <br>
+                      ['Python', 'C++', 'Javascript'] --> string_list <br>
+                      [1, 'one', 2, 'two', 3, 'three'] --> numbers_strings_list <br>
+                      [[1, 2, 3, 4, 5, 6], ['Python', 'C++', 'Javascript']] --> new_list
+                    </code>
+                  </p>
+                  <p>Exercise 1: <br>
+                  Create 3 lists of your choice. Then create one list with the other lists. A lists within a list.
+                  </p>
+                  <button onclick="exercise1_answer()"> Show Answer</button>
+                  <p id="AE_l2" style="display: none;">
+                    <img src="Images/output_ex1.png">
+                  </p>
+                  <p>You learned how to replace an item in a list, now lets go over how to add and delete items in a list.</p>
+                  <h4>Adding items to a list in Python</h4>
+                  <p>Python comes in with a lot of built-in functions. A function is a block of code that will tell Python what to do.</p>
+                  <p>In our recent example, <i>append</i> is an example of a built-in function that adds an item to the end of a list. </p>
+                  <p>Example: <br>
+                    <code>#Lets create a list of our favorite foods <br>
+                      fav_foods = ['Pizza', 'Cheese Burgers', 'Tacos'] <br>
+                      print(fav_foods) <br>
+                      #OUTPUT: ['Pizza', 'Cheese Burgers', 'Tacos'] <br>
+                      <br>
+                      #Oops! I think I forgot to add Burritos. <br>
+                      #This can be added using .append() <br>
+                      fav_foods.append('Burritos') <br>
+                      print(fav_foods) <br>
+                      OUTPUT: ['Pizza', 'Cheese Burgers', 'Tacos', 'Burritos'] <br> <br>
+                    </code>
+                    This method makes it simple and easy to add an item to a list. Try out more problems on your own. 
+                  </p>
+
 
 
                   <p>Finish Lesson</p>
@@ -512,6 +564,12 @@ Hello World </code></pre>
                 </div>
               </div>
               <script src="Javascript/Lesson2.js"></script>
+              <!-- End Lesson 2 -->
+
+
+
+
+
 
               <br><br><br>
 
