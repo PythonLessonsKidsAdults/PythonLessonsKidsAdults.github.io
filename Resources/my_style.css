@@ -1,7 +1,7 @@
 body{
   margin: 0;
   /* background-color: transparent; */
-  background-image: url("../a.png");
+  background-image: url("../Images/a.png");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -20,7 +20,7 @@ body{
 }
 
 #navbar a {
-  float: left;
+  float: right;
   display: block;
   color: white;
   text-align: center;
@@ -102,7 +102,7 @@ header {
 
 /* Create two columns/boxes that floats next to each other */
 nav {
-  float: left;
+  float: right;
   width: 30%;
   background: transparent;
   padding: 20px;

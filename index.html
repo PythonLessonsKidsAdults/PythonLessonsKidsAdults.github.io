@@ -5,33 +5,15 @@
     <title>Learn Python</title>
      <link href="Resources/my_style.css" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link rel="shortcut icon" href="favicon.ico">">
+     <link rel="shortcut icon" href="Images/favicon.ico">">
   </head>
   <body>
     <!-- Begin NavBar -->
     <div id="navbar">
-      <a href="#home">Welcome</a>
-      <!-- <a href="#Lessons">Lessons</a> -->
-      <div class="dropdown">
-        <button class="dropbtn">Lessons</button>
-        <div class="dropdown-content">
-          <a href="#Lessons">All Lessons</a>
-          <a href="#Intro">Intro: Starting Python</a>
-          <a href="#L1">1: Basic Calculations • Varaible</a>
-          <a href="#L2">2: Python Types</a>
-          <a href="#L3">3:Turtle Module</a>
-          <a href="#L4">4: If/Else statemetns</a>
-          <a href="#L5">5: While/For Loops</a>
-          <a href="#L6">6: Create Functions</a>
-          <a href="#L7">7: Classes and Objects</a>
-          <a href="#L8">8: Built-in Functions</a>
-          <a href="#L9">9: Turtle Module (Intermediate)</a>
-          <a href="#L10">10: Tkinder Module (Intermediate)</a>
-          <a href="#L11">11: Create Game</a>
-          <a href="#L12">12: Game cont.</a>
-        </div>
-      </div>
       <a href="#Contact">Contact</a>
+      <a href="#Lessons">Lessons</a>
+      <a href="#home">Welcome</a>
+
     </div>
     <!--Script for navbar -->
     <script src="Javascript/navbar.js"></script>
@@ -68,9 +50,9 @@
               <li><a href="#Lessons">Go to Lessons</a></li>
             </ul>
             <br><br><br><br><br><br><br><br>
-            <img src="inspo1.png" alt="">
+            <img src="Images/inspo1.png" alt="">
             <br><br><br><br><br><br>
-            <img src="pythonEZ.png" alt="">
+            <img src="Images/pythonEZ.png" alt="">
             <br><br><br>
           </nav>
 
@@ -164,7 +146,7 @@
           <p align=center>Examples with comments provided to download. </p>
         </header>
         <section>
-          <nav>
+          <nav class = "g">
             <ul>
               <li><a href="#Intro">Intro: Starting Python</a></li>
               <br><br>
@@ -207,7 +189,7 @@
             </ul>
           </nav>
             <article>
-              <div id ="Intro" >
+              <div id ="Intro">
                 <div class="g">
                   <button class="b1"onclick="typeWriter()">Start Here</button>
                   <button class="b2"onclick="typeWriter2()">Do you have a python environment?</button>
@@ -298,9 +280,8 @@ Hello World </code></pre>
               <div id ="L1">
                 <h2><u>Lesson 1: Basic Calculations | Variables </u></h2>
                 <div class="g">
-                  <button class="b3" onclick="typeWriter3()">Lesson 1</button>
+                  <button class="b3" onclick="typeWriter3()">Lesson 1</button> <a href="#L2">Skip to Lesson 2</a>
                   <p id="l1bcv"></p>
-                  <script src="Javascript/Lesson1.js"></script>
                   <p>Now that you have everything you set up, and you understand how to save and run a python file. Lets get to programming</p>
                   <p style=color:red>It is very important that you understand the concpet of running and saving a python file. It will save you time going forward.</p>
                   <p>First we will begin with simple calculations and then move on to variables. Why? Because variables are used to store things in a computer program
@@ -349,7 +330,6 @@ Hello World </code></pre>
                   <p style="color:red">Remember, multiplication and division always go before addition and subtraction. Unless () are used to control the order of operations</p>
                   <button class="b3" onclick="needhelp()">Need Help?</button>
                   <p id="nh_lesson1"></p>
-                  <script src="Javascript/Lesson1.js"></script>
                   <hr>
                   <h3>Variables</h3>
                   <p>In programming, the term variable that is used to store information- numbers, text, lists of numbers and text, etc..</p>
@@ -377,41 +357,161 @@ Hello World </code></pre>
 
                   <p style="color:red">Try this on your own before checking for the answer!</p>
                   <p>Here the goal is to assign our math values to variables and then doing the math operations to find the total amount of money made from walking my dog for a year.</p>
+                  <button onclick="showAnswer_lesson1()">Show Answer</button>
+                  <p id = "saL1" style="display: none;">
+                    <code>days = 365</code><br>
+                    <code>amount_perDay = 10</code><br>
+                    <code>amount_perMonth_perYear = 60 #5 * 12</code><br>
+                    <code>total_amount = days * amount_perDay + amount_perMonth_perYear</code><br>
+                    <code>OUTPUT: 3710</code>
+                  </p>
+                  <h4>This concludes Lesson1.</h4>
+                  <p>If you still have any questions, reach out to me. Or visit <a href="https://www.python.org/" target="_blank">Python.org</a></p>
                 </div>
-
                 <div class="dropdown">
                   <button class="dropbtn">Practice: Lesson 1</button>
                   <div class="dropdown-content">
-                    <a href="Lesson1.py"  target="_blank">Lesson1.py</a>
+                    <a href="Lessons/Lesson1.py"  target="_blank">Lesson1.py</a>
                   </div>
                 </div>
-
                 <div class="dropdown">
                   <button class="dropbtn">Answers: Lesson 1</button>
                   <div class="dropdown-content">
                     <a href="Lesson1.py"  target="_blank">Lesson1.py</a>
                   </div>
                 </div>
-
               </div>
+              <script src="Javascript/Lesson1.js"></script>
+
 
               <br><br><br>
 
+
+
               <div id ="L2">
                 <h2><u>Lesson 2:Python Types </u></h2>
-
                 <div class="g">
-                  <p>Start Lesson</p>
-                </div>
+                  <button class="b3" onclick="typeWriter_lesson2()">Lesson2</button> <a href="#L1">Go Back to Lesson 1</a> • <a href="#L3">Skip to Lesson 3</a>
+                  <p id="lesson2_b"></p>
+                  <p>Now that you understand the basics of variables and calculations using python, lets move on.</p>
+                  <p style = "color:red;">Again, please follow along to get the most of learning python. Get your code editor and environment ready.</p>
+                  <p style = "color:red;">I will be using # this for comments. If you use this in your code editor, the program won't read it as code, it is just there
+                  for your use.</p>
+                  <p>In this lesson we will talk about other Python items: Strings, Lists, Tuples, and Maps</p>
+                  <p>We will touch on how each item is used. <br> For example: Strings are are used to display messages.</p>
+                  <h3>Using Strings in Python</h3>
+                  <p>What is a string?<br>When programming, string is a mmore technical term for <i>text.</i></p>
+                  <p>If you look at a book, the whole think can be a string, your name can be considered a string as well. <br>
+                    The most popular string phrase in python: "Hello World." Which you learned how to do in lesson 1.
+                  </p>
+                  <br>
+                  <h4>Creating Strings</h4>
+                  <p>To create strings in python, you can use single quotes ('') and double quotes ("").</p>
+                  <p>For example: <br><br>
+                    <code>name = "Python" #or name = 'Python'</code> <br> <br>
+                    Now, if you run this, the output will be empty. Why? Because we need to access the variable and print it.<br><br>
+                    <code>print(name) #OUTPUT: Python</code>
+                  </p>
+                  <p>When using strings, it is always wise that you look it over and make sure that you have closed off the string. <br>
+                  By this, I mean make sure there is " or ' at the ened of your string, depending on which one you are using.</p>
+                  <p>If you don't you can run into some errors: <br>
+                    <code>name  = 'Python</code><br>
+                    <code>print(name)</code><br>
+                    <code style="color: red">OUTPUT: SyntaxError: EOL while scanning string literal</code><br><br>
+                    This means that you did not close off your string, and if you look at the example, we missed a '. <br>
+                    One error that you will come by often is a <strong>SYNTAX</strong> error. This means that there was something done in your python program, that Python was not expecting, or Python was expecting something that you missed. <br> EOL means end-of-line, so the rest of the error message is telling you that Python hit the end of the line and did not find a double quote or single quote to close the string that you created. <br><br>
+                    <button onclick="SyntaxError()">Here is a list of Invalid Syntax in Python.</button>
+                    <div id="ISEP" style="display: none;">
+                      <p>You can see examples of these <a href="https://realpython.com/invalid-syntax-python/" target="_blank">here.</a></p>
+                      <li>Misusing the Assignment Operator (=)</li>
+                      <li>Misspelling, Missing, or Misusing Python Keywords.</li>
+                      <li>Missing Parentheses, Brackets, and Quotes.</li>
+                      <li>Mistaking Dictionary Syntax.</li>
+                      <li>Using the Wrong Indentation.</li>
+                      <li>Defining and Calling Functions.</li>
+                      <li>Changing Python Versions.</li>
+                    </div>
+                  </p>
+                  <p>Another form of writing strings is using the <strong>Multiline String</strong>.</p>
+                  <p>This method looks like: ''' some text '''</p>
+                  <p>Using a multiline string allows you to format text in almost anyway you want. It will take the into account how many indents, spaces, line breaks, 
+                  the proper punctuation, and much more. This solves many of the syntax errors when using strings.</p>
+                  <p>Before we get into some examples, one awesome way to embedd values in a string is using (%s). <br>
+                    This acts as a marker for a value that you created and will like to add to your string.<br>
+                    For example:<br>
+                    <code>points = 30</code><br>
+                    <code>msg = 'I scored %s points out of a possible 40.'</code><br>
+                    <code>print(msg % points)</code><br>
+                    <code>OUTPUT: I scored 30 points out of a possible 40.</code><br><br>
+                    As you can see, the value 30 gets embedded in our msg string. <br>
+                    Another think you can also do with strings is multiply them, for example: <br>
+                    <code>print(10 * 'b')</code><br>
+                    <code>OUTPUT: bbbbbbbbbb</code><br><br>
+                    This outputs the letter b 10 times.
+                  </p>
+                  <p>Lets do an example using the <i>Multiline String</i>. Lets create a letter using python.</p>
+                  <p style="color: red;">Make sure you have your environment set up.</p>
+                  <code>
+                    spaces = ' ' * 25 #this will add 25 spaces<br>
+                    #lets create a random address <br>
+                    print('%s 1111 python drive' % spaces) <br>
+                    print('%s Programming Language' % spaces)<br>
+                    print('%s Denver, CO' % spaces)<br>
+                    print()<br>
+                    print()<br>
+                    print('Dear Python User,')<br>
+                    print()<br>
+                    print('I want to let you know that I believe you will learn a lot from this site.')<br>
+                    print('It is very informative and easy to learn.')<br>
+                    print()<br>
+                    print('Sincerely,')<br>
+                    print('Website Creator')<br><br>
+                  </code>
+                  <button onclick="letterOutPut()">Output</button>
+                  <p id = "letter_lesson2" style="display: none;">
+                    <img src="./Images/output_letter2.png">
+                  </p>
+                  <p>This concludes the section for introduction to strings. However, we are no where near done using them.</p>
 
+                  <h3>Basics of Lists in Python</h3>
+                  <p>Lets say you are going to go to the grocery store to by: Eggs, Ham, Cheese, Bread, Lettuce, Tomatoes.</p>
+                  <p>We would be able to store this grocery list in python as follows: <br><br>
+                    <code>grocery_list = 'Eggs, Ham, Cheese, Bread, Lettuce, Tomatoes'<br>
+                    print(grocery_list)<br>
+                  OUTPUT: Eggs, Ham, Cheese, Bread, Lettuce, Tomatoes</code><br><br>
+                  Though this is simple, we will not be able to manipulate this string for future use. <br>
+                  Instead we can use a list.
+                  </p>
+                  <p>We write our new grocery list as follows:<br>
+                    <code>store_list = ['Eggs', 'Ham', 'Cheese', 'Bread', 'Lettuce', 'Tomatoes'] <br>
+                      print(store_list) <br>
+                      OUTPUT:['Eggs', 'Ham', 'Cheese', 'Bread', 'Lettuce', 'Tomatoes']
+                      <br>
+                    </code>
+                      It does take a little more typing to create a list, but now we can access out items individually and manipulate our grocery list.
+                  </p>
+                  <p>For example, if we wanted to get the our 3rd item from our grocery list, we do this by entering the item position in the list (called the index position) inside square brackets ([]). Like this: <br>
+                    <code>print(store_list[2]) <br>
+                      OUTPUT: Cheese
+                    </code><br><br>
+                    Now you might be asking, why did I put 2 instead of 3 since I wanted to get the 3rd item?<br>
+                    This is because  ists start at index position 0. The first item in a list is 0, then the second is 1, the third is 2, and so on. <br>
+                    This may take some getting use to, but for computers, that is how it makes sense. <br>
+                    Here is a great explanation provided by <a href="https://blog.usejournal.com/arrays-start-at-zero-whats-up-with-that-f2d1054c9b77" target="_blank"> Jonathan Bluks</a>
+                  </p>
+                  <p>Going back to our manipulation of lists, lets say we remembered we had something but need something else. We can change an item by doing the following.</p>
+
+
+                  <p>Finish Lesson</p>
+                </div>
                 <div class="dropdown">
                   <button class="dropbtn">Download File</button>
                   <div class="dropdown-content">
                     <a href="#">Intro</a>
                   </div>
                 </div>
-
               </div>
+              <script src="Javascript/Lesson2.js"></script>
 
               <br><br><br>
 

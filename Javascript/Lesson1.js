@@ -24,3 +24,16 @@ function needhelp(){
   }
 }
 // Lesson 1 button end
+
+// Lesson 1 showAnswer_Lesson1()
+  
+function showAnswer_lesson1(){
+  var x = document.getElementById('saL1');
+  if(x.style.display === "none"){
+    x.style.display = " block"
+  }else{
+    x.style.display = "none";
+  }
+
+}
+// End Lesson showAnswer_Lesson1()
